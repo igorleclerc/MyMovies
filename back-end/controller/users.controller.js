@@ -7,6 +7,13 @@ const jwt = require('jsonwebtoken')
 
 connection.connect()
 
+module.exports.movies = function (req, res){
+    connection.query('SELECT * from mymovies.movies',
+        function (err, results){
+            res.send(results)
+        });
+};
+
 module.exports.login = async function(req, res) {
     const {email, password} = req.body
     const token = jwt.sign({email}, 'secretKey')

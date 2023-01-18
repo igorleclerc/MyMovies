@@ -11,4 +11,7 @@ module.exports = function(app) {
 
     app.route('/users')
         .get(controller.users)
+
+    app.route('/movies')
+        .get(controller.movies)
 }
