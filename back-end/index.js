@@ -1,5 +1,4 @@
 require ("dotenv").config();
-const userRouter = require("./api/users/user.router");
 
 var express = require('express'),
     app = express(),
@@ -11,7 +10,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(cors())
 
-var routes = require('./routes');
+var routes = require('./routes/users.routes.js');
 routes(app);
 
 
@@ -20,5 +19,3 @@ app.listen(port, () => {
 });
 
 console.log('Listening on PORT: ' + process.env.DB_PORT);
-
-app.use("/api/users", userRouter);
