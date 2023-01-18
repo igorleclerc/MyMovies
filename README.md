@@ -14,11 +14,11 @@ Afin de pouvoir lancer MyMovies il est nécessaire d'avoir ces différents logic
 - un IDE (VScode, WebStorm,...)
 
 ## Installation
-Pour pouvoir lancer MyMovies, démarer le serveur Apache et MySQL
-sur XAMPP (sur Windows).
+Pour pouvoir lancer MyMovies, démarer le serveur Apache et MySQL sur XAMPP (sur Windows).
 
 Se rendre dans le repertoire back-end/ :
 ``npm install``
+
 Faire exactement la même chose pour le repertoire front-end/
 
 Pour démarer l'API, executez dans le repertoire back-end/:
